@@ -36,4 +36,5 @@ models:
   jaffle_shop:
     +materialized: view
 
-    
+    +static_analysis: strict
+
