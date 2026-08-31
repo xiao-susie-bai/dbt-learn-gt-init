@@ -7,4 +7,4 @@ select id AS customer_id,
        amount / 100 as amount, 
        created as created_at
        
-FROM raw.stripe.payment
+FROM {{ source('stripe', 'payment') }}
