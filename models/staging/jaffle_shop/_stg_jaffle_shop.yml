@@ -4,4 +4,10 @@ models:
       - name: customer_id
         data_tests: 
           - unique
-          - not null
+          - not_null
+  - name: stg_jaffle_shop__orders
+    columns: 
+      - name: order_id
+        data_tests: 
+          - unique
+          - not_null
