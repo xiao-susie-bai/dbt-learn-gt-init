@@ -15,7 +15,12 @@ models:
         data_tests: 
           - accepted_values: 
               arguments: 
-                values: ['placed', 'shipped', 'completed', 'returned', 'return_pending']
+                values: 
+                  - placed 
+                  - shipped
+                  - completed 
+                  - returned
+                  - return_pending
       - name: customer_id 
         data_tests: 
           - relationships:   
